@@ -1,10 +1,11 @@
 package com.marketplace.GreenAndGo.repository;
 
-
-import com.marketplace.GreenAndGo.model.Product;
+import com.marketplace.GreenAndGo.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.Id;
+
 @Repository
-public interface ProductRepository extends JpaRepository  <Product, Integer> {
+public interface UserRepository extends JpaRepository <User, Id> {
 }
