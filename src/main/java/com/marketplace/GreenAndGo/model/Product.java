@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.List;
 
 @Entity
 public class Product {
@@ -16,8 +17,16 @@ public class Product {
     private int seller_id;
     private float price;
 
-    public Product() {
+    public Product(String name, String image, String description, int seller_id, float price) {
+        this.id = 1;
+        this.name = name;
+        this.image = image;
+        this.description = description;
+        this.seller_id = seller_id;
+        this.price = price;
     }
+
+
 
     public int getId() {
         return id;
