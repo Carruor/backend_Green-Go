@@ -17,8 +17,8 @@ public class Product {
     private int seller_id;
     private float price;
 
-    public Product(String name, String image, String description, int seller_id, float price) {
-        this.id = 1;
+    public Product(int id,String name, String image, String description, int seller_id, float price) {
+        this.id = id;
         this.name = name;
         this.image = image;
         this.description = description;
