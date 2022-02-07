@@ -16,8 +16,10 @@ public class Product {
     private Seller seller;
     private float price;
 
+    public Product() {
+    }
 
-    public Product(int id,String name, String image, String description, Seller seller, float price) {
+    public Product(int id, String name, String image, String description, Seller seller, float price) {
         this.id = id;
         this.name = name;
         this.image = image;
@@ -65,5 +67,13 @@ public class Product {
 
     public void setPrice(float price) {
         this.price = price;
+    }
+
+    public Seller getSeller() {
+        return seller;
+    }
+
+    public void setSeller(Seller seller) {
+        this.seller = seller;
     }
 }
